@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style type="text/css">
+        textarea{
+            width:500px;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+    <form name="Form" method="post">
+        姓名：<input name="username" type="text" placeholder="用户名" maxlength=10 /><br/>
+        密码：<input name="key" type="password" placeholder="密码" maxlength=20 /><br/>
+        性别：<input name="sex" type="radio" value="male" checked/>男<input name="sex" type="radio" value="female"/>女<br/>
+        取向：<input name="prefer" type="radio" value="male"/>男<input name="prefer" type="radio" value="female"/>女<br/>
+        爱好：<input type="checkbox" name="hobby" value="game"/>dota
+               <input type="checkbox" name="hobby" value="travel" checked/>旅游
+                <input type="checkbox" name="hpbby" value="pet" checked/>宠物<br/>
+        评论：<textarea name="comment" type="text" placeholder="ddd" maxlength="200"/></textarea><br/>
+        我的car：<select name="car">
+        <option value="qudi">奥迪</option>
+        <option value="volkswagen">大众</option>
+        <option value="BMW">宝马</option>
+        <option value="SAAB">萨博</option>
+        <input type="submit" value="提交"/><br/>
+                  </select>
+    </form>
+</body>
+</html>
